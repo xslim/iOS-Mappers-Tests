@@ -1,0 +1,1 @@
+../../Isaac/Isaac/Isaac/NSObject+IsaacCopyModel.h
