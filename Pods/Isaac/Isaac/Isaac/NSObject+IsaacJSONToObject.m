@@ -182,11 +182,28 @@
       Class objectClass = [ISCRuntimeUtilities classForProperty:objectKey inClass:[self class]];
       if ([objectClass isSubclassOfClass:[NSString class]]) {
         [self isc_safeSetValue:stringValue forKey:objectKey];
+      } else if ([objectClass isSubclassOfClass:[NSNumber class]]) {
+        [self isc_safeSetValue:@([stringValue floatValue]) forKey:objectKey];
       }
       else {
         ISCLog(@"isc_setStringValue:forObjectKey: warning: unrecognized object %@ of type %@", stringValue, objectClass);
       }
     }
+      break;
+    case 'i': // int
+    case 's': // short
+    case 'l': // long
+    case 'q': // long long
+    case 'I': // unsigned int
+    case 'S': // unsigned short
+    case 'L': // unsigned long
+    case 'Q': // unsigned long long
+    case 'f': // float
+    case 'd': // double
+    case 'B': // BOOL
+    case 'c': // char
+      // Try to save as number
+      [self isc_safeSetValue:@([stringValue floatValue]) forKey:objectKey];
       break;
     default:
       // It's not a recognized mapping. Fail silently.
