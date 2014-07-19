@@ -9,5 +9,5 @@
 #import "Product.h"
 
 @implementation Product
-@synthesize name,extraInfo,allergens,categoryId,detail,identifier,ingredients,mediaUrl,model,nutritions,onSale,shelf,unitQuantity,skus;
+@synthesize name,extraInfo,allergens,categoryId,detail,identifier,ingredients,mediaUrl,model,nutritions,onSale,shelf,unitQuantity,skus,defaultSku;
 @end

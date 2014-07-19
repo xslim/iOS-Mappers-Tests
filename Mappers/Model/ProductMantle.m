@@ -9,7 +9,7 @@
 #import "ProductMantle.h"
 
 @implementation ProductMantle
-@synthesize name,extraInfo,allergens,categoryId,detail,identifier,ingredients,mediaUrl,model,nutritions,onSale,shelf,unitQuantity,skus;
+@synthesize name,extraInfo,allergens,categoryId,detail,identifier,ingredients,mediaUrl,model,nutritions,onSale,shelf,unitQuantity,skus,defaultSku;
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{

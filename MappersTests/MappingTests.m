@@ -43,6 +43,16 @@ static int nums = 10000;
     XCTAssertTrue([product.identifier isKindOfClass:NSString.class], "identifier should be string");
     XCTAssertTrue([product.categoryId isKindOfClass:NSNumber.class], "categoryId should be number");
     XCTAssertTrue((product.unitQuantity > 0), "unitQuantity should be set");
+    
+    XCTAssertNotNil(product.defaultSku, "D-Sku should be set");
+    
+    NSString *dskuName = [product.defaultSku objectForKey:@"name"];
+    XCTAssertNotNil(dskuName, "Skus should be set");
+    
+    NSArray *skus = product.skus;
+    XCTAssertTrue((skus.count > 0), "unitQuantity should be set");
+    NSString *skuName = [skus[0] objectForKey:@"name"];
+    XCTAssertNotNil(skuName, "Skus should be set");
     //[self dumpProduct:product];
 }
 

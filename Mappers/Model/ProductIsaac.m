@@ -31,8 +31,8 @@
     return [super isc_keyForJSONKey:jsonKey];
 }
 
-- (Class)isc_classForObject:(id)object inArrayWithKey:(NSString *)key {
-    return [NSDictionary class];
-}
+//- (Class)isc_classForObject:(id)object inArrayWithKey:(NSString *)key {
+//    return [NSDictionary class];
+//}
 
 @end

@@ -21,7 +21,7 @@
 + (FEMObjectMapping *)mapping
 {
     return [FEMObjectMapping mappingForClass:Product.class configuration:^(FEMObjectMapping *mapping) {
-        [mapping addAttributeMappingFromArray:@[@"name", @"skus", @"categoryId"]];
+        [mapping addAttributeMappingFromArray:@[@"name", @"skus", @"categoryId", @"defaultSku"]];
         [mapping addAttributeMappingDictionary:[self JSONKeyPathsByPropertyKey]];
     }];
 }

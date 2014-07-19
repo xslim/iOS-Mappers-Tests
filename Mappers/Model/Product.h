@@ -22,7 +22,7 @@
 @property (nonatomic, strong) NSString* shelf;
 @property (nonatomic, assign) NSInteger unitQuantity;
 
-
+@property (nonatomic, strong) NSDictionary *defaultSku;
 @property (nonatomic, strong) NSArray *skus;
 
 @property (nonatomic, strong) NSArray *ingredients;
