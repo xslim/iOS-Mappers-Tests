@@ -22,4 +22,6 @@ Testing performance of different mapping engines:
 | Isaak           | 0.830    |
 | FastEasyMapping | 0.669    |
 
+![](http://chart.googleapis.com/chart?cht=bvs&chs=250x130&chds=a&chxt=y&chbh=20,20,20&chco=FFC6A5|FFFF42|DEF3BD|00A5C6|DEBDDE&chd=t:0.990,0.830,0.669&chdl=Mantle|Isaak|FEM)
+
 Feel free to propose more tests
