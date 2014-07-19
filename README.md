@@ -14,6 +14,7 @@ Testing performance of different mapping engines:
 ## Test results
 
 - Run by Xcode 6, 10 times x 10000 loops
+- Mapping NSDictionary to NSObject
 
 | Mapper          | Map 1, s |
 | --------------- |:--------:|
