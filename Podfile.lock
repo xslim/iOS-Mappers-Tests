@@ -1,0 +1,18 @@
+PODS:
+  - FastEasyMapping (HEAD based on 0.3.2)
+  - Isaac (HEAD based on 1.1.1)
+  - Mantle (1.4.1):
+    - Mantle/extobjc
+  - Mantle/extobjc (1.4.1)
+
+DEPENDENCIES:
+  - FastEasyMapping (HEAD)
+  - Isaac (HEAD)
+  - Mantle
+
+SPEC CHECKSUMS:
+  FastEasyMapping: 82c52126b106be92872744197eccdf439985d7f2
+  Isaac: 4370c23390302450f06ff79e86672ed0ae638f9c
+  Mantle: 1ca9c0fa84d3d3fc98524e7229f30489b6dd44e5
+
+COCOAPODS: 0.33.1
