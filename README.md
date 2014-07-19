@@ -3,9 +3,9 @@ Mappers Tests
 
 Testing performance of different mapping engines:
 
-- Mantle
-- Isaak
-- FastEasyMapping
+- [Mantle](https://github.com/Mantle/Mantle)
+- [Isaak](https://github.com/linkedin/Isaac)
+- [FastEasyMapping](https://github.com/Yalantis/FastEasyMapping)
 
 ## Mods to Mappers
 - Isaak: Ability to map `NSString` -> `NSNumber` - Speed dropped by 3%
